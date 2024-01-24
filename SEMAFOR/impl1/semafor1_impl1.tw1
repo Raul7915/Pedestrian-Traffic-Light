@@ -1,0 +1,214 @@
+
+Loading design for application trce from file semafor1_impl1_map.ncd.
+Design name: semafor1
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO3LF-6900C
+Package:     CABGA256
+Performance: 6
+Loading device for application trce from file 'xo3c6900.nph' in environment: A:/FACULTATE/PED/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.17.
+Performance Hardware Data Status:   Final          Version 37.5.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Wed Jan 24 17:10:31 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o semafor1_impl1.tw1 -gui -msgset A:/FACULTATE/PED/SEMAFOR/promote.xml semafor1_impl1_map.ncd semafor1_impl1.prf 
+Design file:     semafor1_impl1_map.ncd
+Preference file: semafor1_impl1.prf
+Device,speed:    LCMXO3LF-6900C,6
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk" 12.000000 MHz ;
+            2303 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 75.314ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              timer_135__i3  (from clk_c +)
+   Destination:    FF         Data in        timer_135__i28  (to clk_c +)
+                   FF                        timer_135__i27
+
+   Delay:               7.795ns  (31.0% logic, 69.0% route), 6 logic levels.
+
+ Constraint Details:
+
+      7.795ns physical path delay SLICE_14 to SLICE_0 meets
+     83.333ns delay constraint less
+      0.224ns LSR_SET requirement (totaling 83.109ns) by 75.314ns
+
+ Physical Path Details:
+
+      Data path SLICE_14 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.369   SLICE_14.CLK to    SLICE_14.Q0 SLICE_14 (from clk_c)
+ROUTE         2   e 0.896    SLICE_14.Q0 to    SLICE_18.B0 timer_3
+CTOF_DEL    ---     0.410    SLICE_18.B0 to    SLICE_18.F0 SLICE_18
+ROUTE         1   e 0.896    SLICE_18.F0 to    SLICE_35.B0 n56
+CTOF_DEL    ---     0.410    SLICE_35.B0 to    SLICE_35.F0 SLICE_35
+ROUTE         1   e 0.896    SLICE_35.F0 to    SLICE_33.B0 n60
+CTOF_DEL    ---     0.410    SLICE_33.B0 to    SLICE_33.F0 SLICE_33
+ROUTE         1   e 0.896    SLICE_33.F0 to    SLICE_29.B1 n62
+CTOF_DEL    ---     0.410    SLICE_29.B1 to    SLICE_29.F1 SLICE_29
+ROUTE        25   e 0.896    SLICE_29.F1 to    SLICE_20.C1 n63
+CTOF_DEL    ---     0.410    SLICE_20.C1 to    SLICE_20.F1 SLICE_20
+ROUTE        10   e 0.896    SLICE_20.F1 to    SLICE_0.LSR n897 (to clk_c)
+                  --------
+                    7.795   (31.0% logic, 69.0% route), 6 logic levels.
+
+Report:  124.704MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "clk" 12.000000 MHz ;    |   12.000 MHz|  124.704 MHz|   6  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 23
+   Covered under: FREQUENCY PORT "clk" 12.000000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2303 paths, 1 nets, and 285 connections (91.94% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Wed Jan 24 17:10:31 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o semafor1_impl1.tw1 -gui -msgset A:/FACULTATE/PED/SEMAFOR/promote.xml semafor1_impl1_map.ncd semafor1_impl1.prf 
+Design file:     semafor1_impl1_map.ncd
+Preference file: semafor1_impl1.prf
+Device,speed:    LCMXO3LF-6900C,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY PORT "clk" 12.000000 MHz ;
+            2303 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.443ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              timer_135__i27  (from clk_c +)
+   Destination:    FF         Data in        timer_135__i27  (to clk_c +)
+
+   Delay:               0.430ns  (53.5% logic, 46.5% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.430ns physical path delay SLICE_0 to SLICE_0 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.443ns
+
+ Physical Path Details:
+
+      Data path SLICE_0 to SLICE_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.131    SLICE_0.CLK to     SLICE_0.Q0 SLICE_0 (from clk_c)
+ROUTE         2   e 0.199     SLICE_0.Q0 to     SLICE_0.A0 timer_27
+CTOF_DEL    ---     0.099     SLICE_0.A0 to     SLICE_0.F0 SLICE_0
+ROUTE         1   e 0.001     SLICE_0.F0 to    SLICE_0.DI0 n138 (to clk_c)
+                  --------
+                    0.430   (53.5% logic, 46.5% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY PORT "clk" 12.000000 MHz ;    |            -|            -|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 23
+   Covered under: FREQUENCY PORT "clk" 12.000000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2303 paths, 1 nets, and 285 connections (91.94% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 0 (setup), 0 (hold)
+Score: 0 (setup), 0 (hold)
+Cumulative negative slack: 0 (0+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

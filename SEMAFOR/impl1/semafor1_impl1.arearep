@@ -1,0 +1,14 @@
+----------------------------------------------------------------------
+Report for cell semafor1.TECH
+Register bits:  37 of 7485 (0.494%)
+I/O cells:      11
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17          100.0
+                            FD1P3AX        22          100.0
+                            FD1P3IX        15          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                               LUT4        47          100.0
+                                 OB         8          100.0
+                              TOTAL       113
