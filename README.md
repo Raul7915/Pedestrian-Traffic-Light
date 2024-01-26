@@ -1,25 +1,7 @@
-npm install --save-dev gulp-remove-html
-
-var gulp = require('gulp');
-var gulpRemoveHtml = require('gulp-remove-html');
-
-gulp.task('build-prod', function () {
-  return gulp.src('files/index.html')
-    .pipe(gulpRemoveHtml())
-    .pipe(gulp.dest('dist/views'));
-});
-
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-  </head>
-  <body>
-    <p>
-      Important content!!!
-    </p>
-    <!--<Deject>-->
-        <p>Shouldn't be here!!!!!</p>
-    <!--</Deject>-->
-  </body>
-</html>
+<a href="https://github.com/emmysteven/emmysteven">
+	<img width="450px" src="https://github-readme-stats.vercel.app/api?username=emmysteven&title_color=ffffff&theme=vue-dark&show_icons=true&count_private=true&hide_border=true" />
+</a><a href="https://github.com/emmysteven/emmysteven">
+	<img height="177em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=emmysteven&title_color=ffffff&theme=vue-dark&show_icons=true&count_private=true&hide_border=true&layout=compact&langs_count=8" />
+	<img height="177em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=emmysteven&title_color=ffffff&theme=vue-dark&show_icons=true&count_private=true&hide_border=true&layout=compact&langs_count=8?hide=css,html,dockerfile" />
+</a>
+</p>s
