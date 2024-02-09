@@ -23,16 +23,16 @@ module semafor1_tb;
 		
         repeat(2)  @(posedge clk);
         rst_n = 1'b1;
-		btn  <= 1'b0;
+	btn  <= 1'b0;
 		
         repeat(2)  @(posedge clk);
         btn = 1'b1;
-				   @(posedge clk);
+		   @(posedge clk);
         btn = 1'b0;
 		
         repeat(70) @(posedge clk);
         btn = 1'b1;
-				   @(posedge clk);
+		   @(posedge clk);
         btn = 1'b0;
 
         repeat(20) @(posedge clk);
